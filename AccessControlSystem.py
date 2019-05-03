@@ -19,7 +19,7 @@ class Studio(tk.Tk):
 
        self.frames = {}
 
-       for F in (StartPage, MainPage, AdminLoginPage, Register):
+       for F in (StartPage, AdminLoginPage, Register):
            frame = F(container, self)
 
            self.frames[F] = frame

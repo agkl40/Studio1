@@ -92,17 +92,6 @@ class StartPage(tk.Frame):
                GPIO.cleanup()
        pass
 
-class MainPage(tk.Frame):
-   def __init__(self, parent, controller):
-       tk.Frame.__init__(self, parent)
-
-       #An empty frame added for additional funcitonality if needed
-       label = tk.Label(self, text='')
-       label.config(font=('Verdana', 14))
-       label.place(x=325, y=100, anchor='center')
-
-       button = tk.Button(self, text=' ', command=lambda: controller.show_frame(Register), height=2, width=30)
-       button.place(x=225, y=300)
 
 class AdminLoginPage(tk.Frame):
        def __init__(self, parent, controller):
